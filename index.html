@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Priyanka Gurrapu | Portfolio</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        background: #0f0f1a;
+        color: #e4e4f0;
+        line-height: 1.6;
+    }
+
+    header {
+        background: #16162b;
+        padding: 25px;
+        text-align: center;
+        border-bottom: 1px solid #2a2a40;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        color: #c084fc;
+    }
+
+    header p {
+        color: #aaa;
+        margin-top: 5px;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #e4e4f0;
+        margin: 0 15px;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #c084fc;
+    }
+
+    section {
+        padding: 70px 20px;
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+        color: #c084fc;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    /* Skills */
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .skill {
+        background: #1c1c2e;
+        padding: 10px 20px;
+        border-radius: 25px;
+        border: 1px solid #2f2f4a;
+        transition: 0.3s;
+    }
+
+    .skill:hover {
+        background: #c084fc;
+        color: #0f0f1a;
+        transform: scale(1.05);
+    }
+
+    /* Projects */
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .card {
+        background: #1a1a2e;
+        width: 300px;
+        padding: 25px;
+        border-radius: 15px;
+        border: 1px solid #2f2f4a;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 0 20px rgba(192, 132, 252, 0.3);
+    }
+
+    .card h3 {
+        margin-bottom: 10px;
+        color: #c084fc;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 8px 18px;
+        border-radius: 25px;
+        text-decoration: none;
+        background: #c084fc;
+        color: #0f0f1a;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #a855f7;
+    }
+
+    footer {
+        background: #16162b;
+        padding: 20px;
+        text-align: center;
+        border-top: 1px solid #2a2a40;
+        color: #aaa;
+    }
+
+    @media(max-width: 768px) {
+        .projects {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Priyanka Gurrapu</h1>
+    <p>Frontend Developer | UI Designer</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+    </nav>
+</header>
+
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>I create clean, responsive, and visually appealing web experiences. I focus on modern design principles and smooth user interactions.</p>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Responsive Design</div>
+            <div class="skill">Git</div>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="projects">
+
+            <div class="card">
+                <h3>Modern Landing Page</h3>
+                <p>A responsive landing page built with clean UI and smooth animations.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+
+            <div class="card">
+                <h3>Task Manager App</h3>
+                <p>A JavaScript-based productivity application with local storage support.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+
+            <div class="card">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio showcasing projects and technical skills.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Priyanka Gurrapu | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
